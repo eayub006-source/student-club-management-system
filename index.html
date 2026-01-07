@@ -7,90 +7,160 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="club-name">CampusConnect Student Club</h1>
-            <p>Connecting Students, Building Community</p>
-        </div>
-    </header>
-    <nav>
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact & Join</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="page">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">CampusConnect</a>
+                <nav class="site-nav">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="events.html">Events</a>
+                    <a href="contact.html">Contact & Join</a>
+                </nav>
+                <a class="button primary" href="contact.html#application">Join Now</a>
+            </div>
+        </header>
 
-    <main class="container">
-        <section>
-            <h2 class="section-title">About Our Club</h2>
-            <div class="intro-box">
-                <p>CampusConnect Club is a student-led organization dedicated to enhancing campus life through events, workshops, and social activities. We help students develop skills, make connections, and create memorable experiences.</p>
-                <p>Our mission is to bridge the gap between academic learning and practical experience by organizing tech talks, cultural events, and community service activities.</p>
-            </div>
-        </section>
-        <section>
-            <h2>Upcoming Events</h2>
-            <div class="event-card">
-                <h3>Annual Tech Symposium</h3>
-                <p><strong>Date:</strong> March 15, 2024</p>
-                <p><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
-                <p><strong>Venue:</strong> Seminar Hall</p>
-                <p><strong>Description:</strong> Join us for a day of tech talks, workshops, and networking with industry professionals.</p>
-            </div>
-            <div class="event-card">
-                <h3>Leadership Workshop</h3>
-                <p><strong>Date:</strong> March 20, 2024</p>
-                <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
-                <p><strong>Venue:</strong> Room 302</p>
-                <p><strong>Description:</strong> Learn essential leadership skills from experienced mentors.</p>
-            </div>
-        </section>
-        <section>
-            <h2>Club Statistics</h2>
-            <table>
-                <tr>
-                    <th>Metric</th>
-                    <th>Value</th>
-                </tr>
-                <tr>
-                    <td>Total Members</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>Total Events This Semester</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>Average Attendance Rate</td>
-                    <td>73.75%</td>
-                </tr>
-                <tr>
-                    <td>Best Attendee</td>
-                    <td>Ahmed Raza (100%)</td>
-                </tr>
-            </table>
-        </section>
+        <main>
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Student Club Management System</p>
+                        <h1>Build campus moments that feel intentional, inclusive, and unforgettable.</h1>
+                        <p class="lead">CampusConnect organizes tech talks, workshops, and community events while tracking members, tasks, and attendance in one place.</p>
+                        <div class="hero-actions">
+                            <a class="button primary" href="events.html">Explore Events</a>
+                            <a class="button ghost" href="contact.html#application">Apply for Membership</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Active Members</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Events This Term</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">73.75%</span>
+                                <span class="stat-label">Avg Attendance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="hero-card">
+                        <h2>Next Up</h2>
+                        <p class="card-title">Annual Tech Symposium</p>
+                        <p class="card-meta">March 15, 2024 · 2:00 PM</p>
+                        <p class="card-body">A focused afternoon of lightning talks, live demos, and networking with industry mentors.</p>
+                        <div class="card-actions">
+                            <a class="button small" href="events.html#registration">Register</a>
+                            <a class="text-link" href="events.html">View Calendar</a>
+                        </div>
+                    </aside>
+                </div>
+            </section>
 
-        <section>
-            <h2>Quick Links</h2>
-            <p>
-                <a href="events.html" class="quick-link">View Event Calendar</a>
-                <a href="contact.html" class="quick-link">Join Our Club</a>
-                <a href="contact.html#team" class="quick-link">Meet Our Team</a>
-                <a href="events.html#registration" class="quick-link">Register for Events</a>
-            </p>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>CampusConnect Student Club</p>
-            <p>Student Center, Room 205 | University Campus</p>
-            <p>Email: campusconnect@university.edu | Phone: (555) 123-4567</p>
-            <p>© 2024 CampusConnect Club. All rights reserved.</p>
-        </div>
-    </footer>
+            <section class="section">
+                <div class="container split-grid">
+                    <div>
+                        <h2>About the Club</h2>
+                        <p>CampusConnect is a student-led community that blends leadership, creativity, and tech exploration. We help students design experiences that build real-world skills.</p>
+                        <p>From planning to delivery, each event is run with a clear workflow: set goals, assign tasks, track progress, and celebrate outcomes together.</p>
+                    </div>
+                    <div class="panel">
+                        <h3>What we focus on</h3>
+                        <ul class="pill-list">
+                            <li>Tech Talks</li>
+                            <li>Leadership Labs</li>
+                            <li>Community Service</li>
+                            <li>Creative Showcases</li>
+                        </ul>
+                        <div class="mini-grid">
+                            <article class="mini-card">
+                                <h4>Workshops</h4>
+                                <p>Hands-on skill sessions led by students and alumni.</p>
+                            </article>
+                            <article class="mini-card">
+                                <h4>Culture</h4>
+                                <p>Events that celebrate diverse stories and campus voices.</p>
+                            </article>
+                            <article class="mini-card">
+                                <h4>Mentorship</h4>
+                                <p>Guidance that helps members grow in confidence and craft.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section alt">
+                <div class="container">
+                    <div class="section-head">
+                        <h2>Upcoming Events</h2>
+                        <p>Plan ahead with a curated mix of technical, social, and leadership experiences.</p>
+                    </div>
+                    <div class="card-grid">
+                        <article class="card">
+                            <div class="card-header">
+                                <h3>Annual Tech Symposium</h3>
+                                <span class="tag">Mar 15</span>
+                            </div>
+                            <p>Talks, workshops, and a networking lounge with guest speakers.</p>
+                            <p class="card-meta">Seminar Hall · 2:00 PM</p>
+                            <a class="text-link" href="events.html">Details</a>
+                        </article>
+                        <article class="card">
+                            <div class="card-header">
+                                <h3>Leadership Workshop</h3>
+                                <span class="tag">Mar 20</span>
+                            </div>
+                            <p>Learn practical leadership frameworks and facilitation skills.</p>
+                            <p class="card-meta">Room 302 · 10:00 AM</p>
+                            <a class="text-link" href="events.html">Details</a>
+                        </article>
+                        <article class="card">
+                            <div class="card-header">
+                                <h3>Social Mixer</h3>
+                                <span class="tag">Mar 25</span>
+                            </div>
+                            <p>Meet new members through collaborative games and icebreakers.</p>
+                            <p class="card-meta">Student Lounge · 5:00 PM</p>
+                            <a class="text-link" href="events.html">Details</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container cta">
+                    <div>
+                        <h2>Ready to build your campus story?</h2>
+                        <p>Join a team that plans with intention and celebrates every win.</p>
+                    </div>
+                    <a class="button primary" href="contact.html#application">Join CampusConnect</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <p class="footer-title">CampusConnect Student Club</p>
+                    <p>Student Center, Room 205</p>
+                    <p>University Campus</p>
+                </div>
+                <div>
+                    <p class="footer-title">Connect</p>
+                    <p>Email: campusconnect@university.edu</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div>
+                    <p class="footer-title">Explore</p>
+                    <a class="text-link" href="events.html">Event Calendar</a>
+                    <a class="text-link" href="contact.html#team">Meet the Team</a>
+                </div>
+            </div>
+            <p class="footer-note">© 2024 CampusConnect Club. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>

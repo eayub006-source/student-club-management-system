@@ -1,208 +1,274 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CampusConnect Club - Events</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="club-name">CampusConnect Events</h1>
-            <p>Join Our Exciting Activities</p>
-        </div>
-    </header>
-
-    <nav>
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html" class="active">Events</a></li>
-                <li><a href="contact.html">Contact & Join</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main class="container">
-        <section>
-            <h2 class="section-title">Event Calendar - March 2024</h2>
-            <table class="calendar-table">
-                <tr>
-                    <th>Date</th>
-                    <th>Event</th>
-                    <th>Time</th>
-                    <th>Venue</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td>Mar 01-10</td>
-                    <td>Design Event Posters</td>
-                    <td>All Day</td>
-                    <td>Online</td>
-                    <td>In Progress</td>
-                </tr>
-                <tr>
-                    <td>Mar 05</td>
-                    <td>Venue Booking Deadline</td>
-                    <td>5:00 PM</td>
-                    <td>Admin Office</td>
-                    <td>Completed</td>
-                </tr>
-                <tr>
-                    <td>Mar 08</td>
-                    <td>Send Invitations</td>
-                    <td>12:00 PM</td>
-                    <td>Club Office</td>
-                    <td>In Progress</td>
-                </tr>
-                <tr>
-                    <td>Mar 09</td>
-                    <td>Arrange Food</td>
-                    <td>10:00 AM</td>
-                    <td>Cafeteria</td>
-                    <td>Not Started</td>
-                </tr>
-                <tr>
-                    <td>Mar 12</td>
-                    <td>Print Certificates</td>
-                    <td>2:00 PM</td>
-                    <td>Print Room</td>
-                    <td>Not Started</td>
-                </tr>
-                <tr>
-                    <td>Mar 15</td>
-                    <td>Tech Symposium</td>
-                    <td>2:00 PM</td>
-                    <td>Seminar Hall</td>
-                    <td>Coming Soon</td>
-                </tr>
-            </table>
-        </section>
-        <section>
-            <h2>Current Task Status</h2>
-            <table>
-                <tr>
-                    <th>Task ID</th>
-                    <th>Task Name</th>
-                    <th>Assigned To</th>
-                    <th>Deadline</th>
-                    <th>Priority</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td>T001</td>
-                    <td>Design Event Posters</td>
-                    <td>Ali Ahmed</td>
-                    <td>Mar 10, 2024</td>
-                    <td>High</td>
-                    <td>In Progress</td>
-                </tr>
-                <tr>
-                    <td>T002</td>
-                    <td>Book Venue</td>
-                    <td>Ahmed Raza</td>
-                    <td>Mar 05, 2024</td>
-                    <td>High</td>
-                    <td>Completed</td>
-                </tr>
-                <tr>
-                    <td>T003</td>
-                    <td>Send Invitations</td>
-                    <td>Sara Khan</td>
-                    <td>Mar 08, 2024</td>
-                    <td>Medium</td>
-                    <td>In Progress</td>
-                </tr>
-                <tr>
-                    <td>T004</td>
-                    <td>Arrange Food</td>
-                    <td>Fatima Noor</td>
-                    <td>Mar 09, 2024</td>
-                    <td>Medium</td>
-                    <td>Not Started</td>
-                </tr>
-                <tr>
-                    <td>T007</td>
-                    <td>Prepare Budget Report</td>
-                    <td>Ahmed Raza</td>
-                    <td>Mar 07, 2024</td>
-                    <td>High</td>
-                    <td>Completed</td>
-                </tr>
-            </table>
-        </section>
-        <section id="registration">
-            <h2>Event Registration Form</h2>
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div>
-                    <label for="student-id">Student ID:</label>
-                    <input type="text" id="student-id" name="student-id" required>
-                </div>
-                
-                <div>
-                    <label for="event">Select Event:</label>
-                    <select id="event" name="event" required>
-                        <option value="">Choose an event</option>
-                        <option value="tech">Annual Tech Symposium (Mar 15)</option>
-                        <option value="workshop">Leadership Workshop (Mar 20)</option>
-                        <option value="social">Social Mixer (Mar 25)</option>
-                    </select>
-                </div>
-                
-                <div>
-                    <label>Attendance Type:</label><br>
-                    <input type="radio" id="physical" name="attendance" value="physical" checked>
-                    <label for="physical">In-Person</label><br>
-                    <input type="radio" id="online" name="attendance" value="online">
-                    <label for="online">Online</label>
-                </div>
-                
-                <div>
-                    <label>
-                        <input type="checkbox" name="updates" checked>
-                        Send me updates about future events
-                    </label>
-                </div>
-                
-                <div>
-                    <label for="comments">Additional Comments:</label>
-                    <textarea id="comments" name="comments" rows="4"></textarea>
-                </div>
-                
-                <input type="submit" value="Register Now">
-            </form>
-        </section>
-        <section class="event-gallery">
-            <h2>Past Event Gallery</h2>
-            <div>
-                <h3>Coding Competition - Feb 2024</h3>
-                <p>50+ participants competed in our annual coding challenge</p>
-                
-                <h3>Career Fair - Jan 2024</h3>
-                <p>20+ companies participated in our campus recruitment drive</p>
-                
-                <h3>Cultural Night - Dec 2023</h3>
-                <p>200+ attendees enjoyed performances from different cultures</p>
+    <div class="page">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">CampusConnect</a>
+                <nav class="site-nav">
+                    <a href="index.html">Home</a>
+                    <a class="active" href="events.html">Events</a>
+                    <a href="contact.html">Contact & Join</a>
+                </nav>
+                <a class="button primary" href="contact.html#application">Join Now</a>
             </div>
-        </section>
-    </main>
+        </header>
 
-    <footer>
-        <div class="container">
-            <p>CampusConnect Student Club</p>
-            <p>Student Center, Room 205 | University Campus</p>
-            <p>Email: campusconnect@university.edu | Phone: (555) 123-4567</p>
-            <p>© 2024 CampusConnect Club. All rights reserved.</p>
-        </div>
-    </footer>
+        <main>
+            <section class="page-hero">
+                <div class="container hero-grid">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Events & Operations</p>
+                        <h1>March 2024 Event Calendar</h1>
+                        <p class="lead">Track milestones, stay on schedule, and register for the experiences that matter most.</p>
+                        <div class="hero-actions">
+                            <a class="button primary" href="#registration">Register Now</a>
+                            <a class="button ghost" href="contact.html#team">Meet the Team</a>
+                        </div>
+                    </div>
+                    <aside class="hero-card">
+                        <h2>This Month</h2>
+                        <p class="card-title">6 Events Planned</p>
+                        <p class="card-body">Two workshops, one symposium, and community-focused programming for every member.</p>
+                        <div class="card-actions">
+                            <a class="text-link" href="#calendar">See Schedule</a>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="calendar" class="section">
+                <div class="container">
+                    <div class="section-head">
+                        <h2>Event Calendar</h2>
+                        <p>Stay aligned with planning tasks and deadlines.</p>
+                    </div>
+                    <div class="table-card">
+                        <table class="calendar-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Event</th>
+                                    <th>Time</th>
+                                    <th>Venue</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mar 01-10</td>
+                                    <td>Design Event Posters</td>
+                                    <td>All Day</td>
+                                    <td>Online</td>
+                                    <td>In Progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Mar 05</td>
+                                    <td>Venue Booking Deadline</td>
+                                    <td>5:00 PM</td>
+                                    <td>Admin Office</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td>Mar 08</td>
+                                    <td>Send Invitations</td>
+                                    <td>12:00 PM</td>
+                                    <td>Club Office</td>
+                                    <td>In Progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Mar 09</td>
+                                    <td>Arrange Food</td>
+                                    <td>10:00 AM</td>
+                                    <td>Cafeteria</td>
+                                    <td>Not Started</td>
+                                </tr>
+                                <tr>
+                                    <td>Mar 12</td>
+                                    <td>Print Certificates</td>
+                                    <td>2:00 PM</td>
+                                    <td>Print Room</td>
+                                    <td>Not Started</td>
+                                </tr>
+                                <tr>
+                                    <td>Mar 15</td>
+                                    <td>Tech Symposium</td>
+                                    <td>2:00 PM</td>
+                                    <td>Seminar Hall</td>
+                                    <td>Coming Soon</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section alt">
+                <div class="container split-grid">
+                    <div>
+                        <div class="section-head">
+                            <h2>Current Task Status</h2>
+                            <p>Leadership keeps milestones visible and accountable.</p>
+                        </div>
+                        <div class="table-card">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Task ID</th>
+                                        <th>Task Name</th>
+                                        <th>Assigned To</th>
+                                        <th>Deadline</th>
+                                        <th>Priority</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>T001</td>
+                                        <td>Design Event Posters</td>
+                                        <td>Ali Ahmed</td>
+                                        <td>Mar 10, 2024</td>
+                                        <td>High</td>
+                                        <td>In Progress</td>
+                                    </tr>
+                                    <tr>
+                                        <td>T002</td>
+                                        <td>Book Venue</td>
+                                        <td>Ahmed Raza</td>
+                                        <td>Mar 05, 2024</td>
+                                        <td>High</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>T003</td>
+                                        <td>Send Invitations</td>
+                                        <td>Sara Khan</td>
+                                        <td>Mar 08, 2024</td>
+                                        <td>Medium</td>
+                                        <td>In Progress</td>
+                                    </tr>
+                                    <tr>
+                                        <td>T004</td>
+                                        <td>Arrange Food</td>
+                                        <td>Fatima Noor</td>
+                                        <td>Mar 09, 2024</td>
+                                        <td>Medium</td>
+                                        <td>Not Started</td>
+                                    </tr>
+                                    <tr>
+                                        <td>T007</td>
+                                        <td>Prepare Budget Report</td>
+                                        <td>Ahmed Raza</td>
+                                        <td>Mar 07, 2024</td>
+                                        <td>High</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-head">
+                            <h2 id="registration">Event Registration</h2>
+                            <p>Reserve your seat with the form below.</p>
+                        </div>
+                        <form class="form-card" action="#" method="post">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="student-id">Student ID</label>
+                            <input type="text" id="student-id" name="student-id" required>
+
+                            <label for="event">Select Event</label>
+                            <select id="event" name="event" required>
+                                <option value="">Choose an event</option>
+                                <option value="tech">Annual Tech Symposium (Mar 15)</option>
+                                <option value="workshop">Leadership Workshop (Mar 20)</option>
+                                <option value="social">Social Mixer (Mar 25)</option>
+                            </select>
+
+                            <fieldset class="field-group">
+                                <legend>Attendance Type</legend>
+                                <label class="option">
+                                    <input type="radio" name="attendance" value="physical" checked>
+                                    In-Person
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="attendance" value="online">
+                                    Online
+                                </label>
+                            </fieldset>
+
+                            <label class="option">
+                                <input type="checkbox" name="updates" checked>
+                                Send me updates about future events
+                            </label>
+
+                            <label for="comments">Additional Comments</label>
+                            <textarea id="comments" name="comments" rows="4"></textarea>
+
+                            <button type="submit" class="button primary full">Register Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-head">
+                        <h2>Past Event Highlights</h2>
+                        <p>A snapshot of community wins from recent months.</p>
+                    </div>
+                    <div class="card-grid">
+                        <article class="card">
+                            <h3>Coding Competition</h3>
+                            <p>50+ participants collaborated in our annual coding challenge.</p>
+                            <p class="card-meta">Feb 2024 · Innovation Lab</p>
+                        </article>
+                        <article class="card">
+                            <h3>Career Fair</h3>
+                            <p>20+ companies joined us for campus recruitment sessions.</p>
+                            <p class="card-meta">Jan 2024 · Main Hall</p>
+                        </article>
+                        <article class="card">
+                            <h3>Cultural Night</h3>
+                            <p>200+ attendees shared performances from different cultures.</p>
+                            <p class="card-meta">Dec 2023 · Auditorium</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <p class="footer-title">CampusConnect Student Club</p>
+                    <p>Student Center, Room 205</p>
+                    <p>University Campus</p>
+                </div>
+                <div>
+                    <p class="footer-title">Connect</p>
+                    <p>Email: campusconnect@university.edu</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div>
+                    <p class="footer-title">Explore</p>
+                    <a class="text-link" href="contact.html#application">Join the Club</a>
+                    <a class="text-link" href="index.html">Home</a>
+                </div>
+            </div>
+            <p class="footer-note">© 2024 CampusConnect Club. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
