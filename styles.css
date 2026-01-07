@@ -1,0 +1,277 @@
+/* 
+STYLES.CSS
+Using ONLY CSS concepts taught in Lab 11:
+- Type selectors, class selectors, ID selectors, universal selector, grouping selectors
+- Attribute selectors for forms
+- Multiple style rules
+- CSS colors (hex codes)
+- CSS backgrounds (color, image, repeat, position)
+- CSS fonts (family, size, style, weight, variant)
+- CSS text properties (color, align, decoration, transform, spacing)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+body {
+    background-color: #f0f8ff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 15px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #3498db;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #2980b9;
+}
+
+.intro-box {
+    background-color: #ecf0f1;
+    padding: 25px;
+    border-left: 5px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.event-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.quick-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.quick-link:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
+
+.team-member {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+#club-logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: #ffffff;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e8f4fc;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+input[type="submit"],
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.calendar-table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.important-text {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.event-gallery {
+    background-color: #ecf0f1;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23ffffff" opacity="0.3"/></svg>');
+    background-repeat: repeat;
+    background-position: center;
+    padding: 25px;
+    border-radius: 8px;
+}
+.club-name {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #ffffff;
+}
+.section-title {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: #2c3e50;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
